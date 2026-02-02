@@ -243,6 +243,7 @@ p {
 .mobile-menu-container {
     position: relative;
     padding-top: 72px;
+    padding-bottom: 40px;
     display: flex;
     flex-direction: column;
     height: 100%;
@@ -274,27 +275,40 @@ p {
     color: #2E2F42;
 }
 
-.nav-mobile:focus {
+.nav-mobile:focus,
+.mobile-item:focus,
+.nav-mobile:hover,
+.mobile-item:hover {
     color: #404bbf;
 }
 
 .contacts-mobile {
     margin-left: 16px;
+    margin-bottom: 48px;
 }
 
-.mobile-link {
+.mobile-list {
     font-family: Roboto;
     font-weight: 500;
     font-size: 20px;
     line-height: 24px;
     letter-spacing: 0.02em;
     color: #434455;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
 }
 
+.mobile-list {}
+
 .mobile-icon {
-    margin-bottom: 40px;
     margin-left: 16px;
-    margin-right: 24px;
+}
+
+.item-icons-mobile {
+    display: flex;
+    justify-content: flex-start;
+    gap: 40px;
 }
 
 .main {
