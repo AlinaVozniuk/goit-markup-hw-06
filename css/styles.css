@@ -57,9 +57,9 @@ p {
 
 }
 
-@media screen and (min-width: 1440px) {
+@media screen and (min-width: 1158px) {
     .container {
-        max-width: 1440px;
+        max-width: 1158px;
         padding: 0 15px
     }
 }
@@ -195,7 +195,7 @@ p {
     }
 }
 
-@media screen and (min-width: 1440px) {
+@media screen and (min-width: 1158px) {
     .header-logo {
         margin-right: 76px;
     }
@@ -401,9 +401,9 @@ p {
     }
 }
 
-@media screen and (min-width: 1440px) {
+@media screen and (min-width: 1158px) {
     .main {
-        max-width: 1440px;
+        max-width: 1158px;
         padding: 188px 0;
         background-image: linear-gradient(to bottom, rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
             url("../images/people-office.jpg");
@@ -486,13 +486,17 @@ p {
     }
 }
 
-@media screen and (min-width: 1440px) {
+@media screen and (min-width: 1158px) {
     .section-container {
         padding: 0 15px;
     }
 
+    .container {
+        max-width: 1158px;
+    }
+
     .section-headline {
-        max-width: 1440px;
+        max-width: 1158px;
         padding: 120px 156px;
     }
 
@@ -650,7 +654,7 @@ p {
     }
 }
 
-@media only screen and (min-width: 1440px) {
+@media only screen and (min-width: 1158px) {
     .li-team {
         display: flex;
         justify-content: space-around;
@@ -659,7 +663,7 @@ p {
     }
 
     .container {
-        max-width: 1440px;
+        max-width: 1158px;
     }
 }
 
@@ -745,9 +749,9 @@ p {
     }
 }
 
-@media screen and (min-width: 1440px) {
+@media screen and (min-width: 1158px) {
     .container {
-        max-width: 1440px;
+        max-width: 1158px;
     }
 
     .li-portfolio {
@@ -997,9 +1001,9 @@ p {
     }
 }
 
-@media screen and (min-width: 1440px) {
+@media screen and (min-width: 1158px) {
     .container {
-        max-width: 1440px;
+        max-width: 1158px;
     }
 
     .container-footer {
