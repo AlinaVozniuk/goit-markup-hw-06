@@ -243,10 +243,9 @@ p {
 .mobile-menu-container {
     position: relative;
     padding-top: 72px;
-    padding-bottom: 168px;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    height: 100%;
 }
 
 .mobile-menu-close {
@@ -258,8 +257,12 @@ p {
 .mobile-nav {
     display: flex;
     flex-direction: column;
-    gap: 40px;
     margin-bottom: auto;
+}
+
+.mobile-item {
+    padding-bottom: 40px;
+    margin-left: 16px;
 }
 
 .nav-mobile {
@@ -268,15 +271,15 @@ p {
     font-size: 36px;
     line-height: 40px;
     letter-spacing: 0.02em;
+    color: #2E2F42;
 }
 
 .nav-mobile:focus {
     color: #404bbf;
 }
 
-.mobile-nav {
-    display: flex;
-    gap: 40px;
+.contacts-mobile {
+    margin-left: 16px;
 }
 
 .mobile-link {
