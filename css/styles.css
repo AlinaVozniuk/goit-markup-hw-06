@@ -482,10 +482,6 @@ p {
         max-width: 1158px;
     }
 
-    .section-headline {
-        max-width: 1158px;
-    }
-
 
     .li-item {
         width: calc((100% - 72px) / 4);
