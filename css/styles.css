@@ -245,6 +245,7 @@ p {
     display: flex;
     flex-direction: column;
     height: 100%;
+    padding-left: 16px;
 }
 
 .mobile-menu-close {
@@ -259,9 +260,9 @@ p {
     margin-bottom: auto;
 }
 
+
 .mobile-item {
-    padding-bottom: 40px;
-    margin-left: 16px;
+    margin-bottom: 40px;
 }
 
 .nav-mobile {
@@ -273,8 +274,11 @@ p {
     color: #2E2F42;
 }
 
+.studio-mobile {
+    color: #404BBF;
+}
+
 .contacts-mobile {
-    margin-left: 16px;
     margin-bottom: 48px;
 
 }
@@ -293,14 +297,25 @@ p {
     color: #4D5AE5;
 }
 
+.mobile-iconcs {
+    border-radius: 50%;
+    width: 100%;
+    height: 100%;
+    background-color: #4D5AE5;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
 .mobile-list {
     display: flex;
     flex-direction: column;
     gap: 24px;
 }
 
-.mobile-icon {
-    margin-left: 16px;
+.team-iconcs {
+    margin-top: 0;
 }
 
 .item-icons-mobile {
@@ -385,7 +400,7 @@ p {
     @media (min-resolution: 192dpi) {
         .main {
             background-image: linear-gradient(to bottom, rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
-                url("../images/people-office-2x.jpg");
+                url("../images/people-tablet-2x.jpg");
         }
     }
 
@@ -399,7 +414,7 @@ p {
 
 @media screen and (min-width: 1158px) {
     .main {
-        max-width: 1158px;
+        max-width: 1440px;
         padding: 188px 0;
         background-image: linear-gradient(to bottom, rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
             url("../images/people-office.jpg");
@@ -408,7 +423,7 @@ p {
     @media (min-resolution: 192dpi) {
         .main {
             background-image: linear-gradient(to bottom, rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
-                url("../images/people-office-2x.jpg");
+                url("../images/people-desktop-2x.jpg");
         }
     }
 
@@ -417,9 +432,13 @@ p {
     }
 }
 
+.section-headline {
+    padding: 96px 0;
+}
+
 .section-container {
     max-width: 320px;
-    padding: 96px 16px;
+    padding: 0 16px;
     display: flex;
     flex-wrap: wrap;
 }
@@ -459,12 +478,12 @@ p {
 }
 
 @media screen and (min-width: 768px) {
-    .section-container {
-        max-width: 768px;
-    }
-
     .li-item {
         max-width: 356px;
+    }
+
+    .section-container {
+        max-width: 768px;
     }
 
     .headline-goal {
@@ -482,13 +501,9 @@ p {
 
 @media screen and (min-width: 1158px) {
     .section-container {
+        max-width: 1158px;
         padding: 0 15px;
     }
-
-    .container {
-        max-width: 1158px;
-    }
-
 
     .li-item {
         width: calc((100% - 72px) / 4);
@@ -524,8 +539,6 @@ p {
     .headline-goal {
         flex-wrap: nowrap;
         gap: 24px;
-        padding: 120px 0;
-
     }
 }
 
@@ -535,7 +548,7 @@ p {
 }
 
 .container {
-    max-width: 320px;
+    padding: 0 16px;
 }
 
 .li-team {
@@ -549,8 +562,9 @@ p {
     font-family: "Roboto", sans-serif;
     line-height: 1.11;
     text-transform: capitalize;
-    font-weight: 500;
+    font-weight: 700;
     font-size: 36px;
+    line-height: 40%;
     letter-spacing: 0.02em;
     text-align: center;
     color: #2e2f42;
@@ -631,10 +645,6 @@ p {
         flex-wrap: wrap;
     }
 
-    .container {
-        max-width: 768px;
-    }
-
     .li-team {
         flex-direction: row;
         flex-wrap: wrap;
@@ -645,20 +655,20 @@ p {
 }
 
 @media only screen and (min-width: 1158px) {
+    .section-team {
+        padding: 120px 0;
+    }
+
+    .container {
+        padding: 0 15px;
+    }
+
     .li-team {
         display: flex;
         justify-content: space-around;
         gap: 24px;
         flex-wrap: nowrap;
     }
-
-    .container {
-        max-width: 1158px;
-    }
-}
-
-.container {
-    max-width: 320px;
 }
 
 .li-portfolio {
@@ -705,7 +715,7 @@ p {
 }
 
 .text-overlay {
-    visibility: hidden;
+    display: none;
 }
 
 .portfolio-type {
@@ -722,10 +732,6 @@ p {
         flex-wrap: wrap;
     }
 
-    .container {
-        max-width: 768px;
-    }
-
     .li-portfolio {
         flex-direction: row;
         column-gap: 24px;
@@ -740,15 +746,15 @@ p {
 }
 
 @media screen and (min-width: 1158px) {
-    .container {
-        max-width: 1158px;
-    }
-
     .li-portfolio {
-        gap: 24px;
+        row-gap: 48px;
         flex-wrap: wrap;
         position: relative;
         overflow: hidden;
+    }
+
+    .bankinp-app {
+        box-shadow: none;
     }
 
     .bankinp-app:hover {
@@ -791,18 +797,22 @@ p {
     }
 }
 
+.container-footer {
+    padding: 96px 0;
+}
+
 .page-footer {
     background-color: #2E2F42;
     flex-wrap: wrap;
 }
 
-.container {
-    max-width: 320px;
+.part-footer {
+    padding: 0 16px;
 }
 
 .footer-offer {
-    padding: 96px 16px 16px;
     text-align: center;
+    margin-bottom: 72px;
 }
 
 .footer-logo .logo-part {
@@ -812,7 +822,7 @@ p {
 .footer-logo {
     display: inline-block;
     align-items: center;
-    margin-bottom: 16px;
+    padding-bottom: 16px;
 }
 
 .offer {
@@ -827,6 +837,7 @@ p {
 
 .footer-li {
     text-align: center;
+    margin-bottom: 72px;
 }
 
 .footer-iconcs {
@@ -852,7 +863,6 @@ p {
     line-height: 1.5;
     letter-spacing: 0.02em;
     color: #fff;
-    margin-top: 72px;
     margin-bottom: 16px;
 }
 
@@ -865,7 +875,6 @@ p {
 
 .subscribe {
     border-radius: 4px;
-    /* padding: 8px 24px; */
     width: 165px;
     height: 40px;
     background: #4d5ae5;
@@ -880,16 +889,11 @@ p {
     height: 40px;
     background-color: transparent;
     font-size: 12px;
-    line-height: 2;
+    line-height: 24px;
     letter-spacing: 0.04em;
-    color: var(--white);
-    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
-    padding-left: 16px;
+    color: #FFFFFF;
+    padding: 8px 8px 0 16px;
     outline: transparent;
-}
-
-.footer-title {
-    margin-top: 72px;
 }
 
 .title-footer {
@@ -899,9 +903,10 @@ p {
     line-height: 1.5;
     letter-spacing: 0.02em;
     color: #fff;
-    margin-bottom: 16px;
+    padding-bottom: 16px;
     text-align: center;
 }
+
 
 .form-footer {
     display: flex;
@@ -909,7 +914,6 @@ p {
     justify-content: center;
     align-items: center;
     gap: 16px;
-    padding-bottom: 96px;
 }
 
 .subscribe-submit {
@@ -932,20 +936,16 @@ p {
 }
 
 @media screen and (min-width: 768px) {
-    .container {
-        max-width: 768px;
-    }
-
     .container-footer {
-        flex-wrap: wrap;
-        justify-content: flex-start;
-        flex-direction: row;
+        padding: 96px 108px;
     }
 
     .part-footer {
         display: flex;
         flex-wrap: wrap;
-        padding-left: 108px;
+        padding: 0 0;
+        gap: 24px;
+
     }
 
     .footer-offer {
@@ -954,30 +954,17 @@ p {
     }
 
     .social {
-        margin: 0 0;
-        padding-top: 96px;
-        padding-bottom: 16px;
+        margin-bottom: 16px;
     }
 
     .footer-li {
         text-align: left;
-        width: 208px;
-        padding-left: 24px;
-    }
-
-    .footer-button {
-        padding-left: 108px;
     }
 
     .title-footer {
         text-align: left;
         margin-bottom: 0;
     }
-
-    .footer-title {
-        margin-bottom: 16px;
-    }
-
 
     .form-footer {
         flex-direction: row;
@@ -991,27 +978,28 @@ p {
 }
 
 @media screen and (min-width: 1158px) {
-    .container {
-        max-width: 1158px;
-    }
-
     .container-footer {
+        padding: 100px 16px;
         display: flex;
         align-items: baseline;
     }
 
     .footer-offer {
-        margin-right: 120px;
-        padding: 0 0;
+        margin-bottom: 0;
+    }
+
+    .part-footer {
+        flex-wrap: nowrap;
+        gap: 120px;
     }
 
     .footer-logo {
         display: inline-block;
-        margin-bottom: 16px;
     }
 
-    .form-footer {
-        margin-top: 16px;
+    .footer-li {
+        margin-bottom: 0;
+        margin-right: 80px;
     }
 
     .footer-iconcs {
@@ -1034,15 +1022,6 @@ p {
     .footer-item {
         display: flex;
         gap: 16px;
-    }
-
-    .footer-button {
-        padding-left: 80px;
-    }
-
-    .part-footer {
-        padding-top: 96px;
-        padding-left: 15px;
     }
 
     .footer-li {
